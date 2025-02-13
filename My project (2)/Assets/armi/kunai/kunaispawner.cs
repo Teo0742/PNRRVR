@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class kunaispawner : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class kunaispawner : MonoBehaviour
        /* shootAction.action.WasPressedThisFrame-> non so cosa faccia
        */
         if(shootAction.action.WasPressedThisFrame()){
-            Instantie(proiettile, firePoint.position, firePoint.rotation);
+            Instantiate(proiettile, firePoint.position, firePoint.rotation);
         }
     }
 }
